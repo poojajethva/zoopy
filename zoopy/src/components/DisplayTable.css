@@ -1,0 +1,21 @@
+.tableData{
+    width: 100%;
+    padding: 5px;
+}
+
+thead{
+    background: #20B2AA;
+}
+
+th{
+    padding: 12px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 20%;
+}
+td{
+    padding: 12px 8px;
+    border-bottom: 1px solid #eee;
+    width: 20%;
+}

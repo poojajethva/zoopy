@@ -1,0 +1,18 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+    color: #20B2AA;
+    padding: 1rem;
+}
+.btn {
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    color: #20B2AA;
+    cursor: pointer;
+    border-radius: 8px;
+}
