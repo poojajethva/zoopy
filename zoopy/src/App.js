@@ -3,7 +3,7 @@ import { useDataLayerValue } from "./datastore/DataLayer";
 import DisplayTable from "./components/DisplayTable";
 import Pagination from "./components/Pagination";
 import Search from "./components/Search";
-import MapsData from "./components/MapsData";
+import Map from "./components/Map";
 import { removeUnavailableData } from "./helper/getEntries";
 import "./App.css";
 
@@ -26,7 +26,8 @@ return (
         <Pagination />
       </div>
       <div className="rightCol">
-        <MapsData />
+        {/* <MapsData /> */}
+        <Map />
       </div>
     </div>
   );

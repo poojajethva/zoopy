@@ -9,6 +9,9 @@ export const initialState = {
   searchTerm: "",
   mapObj: {},
   errorMsg: false,
+  viewport: {},
+  showPopup: false,
+  popupObj: {},
 };
 
 export const reducer = (state, action) => {
@@ -43,16 +46,32 @@ export const reducer = (state, action) => {
         ...state,
         postalData: action.postalData,
       };
-      case "SET_MAP_OBJ":
-        return {
-          ...state,
-          mapObj: action.mapObj
-        };
-        case "SET_ERROR_MSG":
-        return {
-          ...state,
-          errorMsg: action.errorMsg
-        };
+    case "SET_MAP_OBJ":
+      return {
+        ...state,
+        mapObj: action.mapObj,
+      };
+    case "SET_ERROR_MSG":
+      return {
+        ...state,
+        errorMsg: action.errorMsg,
+      };
+    case "SET_POPUP_OBJ":
+      return {
+        ...state,
+        popupObj: action.popupObj,
+      };
+    case "SET_SHOW_POPUP":
+      return {
+        ...state,
+        showPopup: action.showPopup,
+      };
+    case "SET_VIEW_PORT":
+      return {
+        ...state,
+        viewport: action.viewport,
+      };
+
     default:
       return state;
   }

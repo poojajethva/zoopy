@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useDataLayerValue } from "../datastore/DataLayer";
-import mapboxgl from "mapbox-gl";
+import { FlyToInterpolator } from "react-map-gl";
 import { getSearchedQuery } from "../helper/getEntries";
 import "./Search.css";
-
 const Search = () => {
-  const [{ postalData, searchTerm, mapObj, errorMsg }, dispatch] =
+  const [{ postalData, searchTerm, viewport, errorMsg }, dispatch] =
     useDataLayerValue();
 
   const handleChange = (e) => {
@@ -21,30 +20,30 @@ const Search = () => {
   };
 
   const searchLocator = (arr) => {
-    mapObj.flyTo({
-      center: [arr[0].longitude, arr[0].latitude],
-      essential: true,
-    });
-    var popUps = document.getElementsByClassName("mapboxgl-popup");
-    /** Check if there is already a popup on the map and if so, remove it */
-    if (popUps[0]) popUps[0].remove();
-
-    var popup = new mapboxgl.Popup({ closeOnClick: false })
-      .setLngLat([arr[0].longitude, arr[0].latitude])
-      .setHTML(
-        "<h3>" +
-          "Zoopy" +
-          "</h3><p>" +
-          arr[0].city + ", " + arr[0].country + 
-          "</p>"
-      )
-      .addTo(mapObj);
+    return {
+      longitude: arr[0].longitude,
+      latitude: arr[0].latitude,
+      zoom: 9,
+      transitionDuration: 5000,
+      transitionInterpolator: new FlyToInterpolator(),
+    };
   };
 
   const handleSubmit = (e) => {
     const arr = getSearchedQuery(postalData, searchTerm);
     if (arr.length) {
-      searchLocator(arr);
+      const obj = searchLocator(arr);
+      console.log(obj);
+      dispatch({ type: "SET_VIEW_PORT", viewport: obj });
+      dispatch({
+        type: "SET_DATA_CHUNK",
+        dataChunk: arr,
+      });
+      dispatch({
+        type: "SET_POPUP_OBJ",
+        popupObj: arr[0],
+      });
+      dispatch({ type: "SET_SHOW_POPUP", showPopup: true });
     } else {
       dispatch({
         type: "SET_ERROR_MSG",
