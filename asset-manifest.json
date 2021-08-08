@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/zoopy/static/css/main.490f7ec3.chunk.css",
+    "main.js": "/zoopy/static/js/main.a7aa41c4.chunk.js",
+    "main.js.map": "/zoopy/static/js/main.a7aa41c4.chunk.js.map",
+    "runtime-main.js": "/zoopy/static/js/runtime-main.bdca604f.js",
+    "runtime-main.js.map": "/zoopy/static/js/runtime-main.bdca604f.js.map",
+    "static/css/2.9345dda6.chunk.css": "/zoopy/static/css/2.9345dda6.chunk.css",
+    "static/js/2.9abb2369.chunk.js": "/zoopy/static/js/2.9abb2369.chunk.js",
+    "static/js/2.9abb2369.chunk.js.map": "/zoopy/static/js/2.9abb2369.chunk.js.map",
+    "index.html": "/zoopy/index.html",
+    "static/css/2.9345dda6.chunk.css.map": "/zoopy/static/css/2.9345dda6.chunk.css.map",
+    "static/css/main.490f7ec3.chunk.css.map": "/zoopy/static/css/main.490f7ec3.chunk.css.map",
+    "static/js/2.9abb2369.chunk.js.LICENSE.txt": "/zoopy/static/js/2.9abb2369.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bdca604f.js",
+    "static/css/2.9345dda6.chunk.css",
+    "static/js/2.9abb2369.chunk.js",
+    "static/css/main.490f7ec3.chunk.css",
+    "static/js/main.a7aa41c4.chunk.js"
+  ]
+}
