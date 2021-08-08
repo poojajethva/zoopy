@@ -18,7 +18,7 @@ const DisplayTable = () => {
         type: "SET_NEXT_START",
         nextStart: _dataChunk.nextStart,
       });
-  }, [currentPage]);
+  }, [currentPage, postalData]);
 
   return (
     <section className="container">

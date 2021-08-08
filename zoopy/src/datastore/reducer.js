@@ -7,6 +7,8 @@ export const initialState = {
   totalPages: 1,
   currentPage: 1,
   searchTerm: "",
+  mapObj: {},
+  errorMsg: false,
 };
 
 export const reducer = (state, action) => {
@@ -31,11 +33,26 @@ export const reducer = (state, action) => {
         ...state,
         nextStart: action.nextStart,
       };
-      case "SET_SEARCH_TERM":
-        return{
+    case "SET_SEARCH_TERM":
+      return {
+        ...state,
+        searchTerm: action.searchTerm,
+      };
+    case "SET_POSTAL_DATA":
+      return {
+        ...state,
+        postalData: action.postalData,
+      };
+      case "SET_MAP_OBJ":
+        return {
           ...state,
-          searchTerm: action.searchTerm
-        }
+          mapObj: action.mapObj
+        };
+        case "SET_ERROR_MSG":
+        return {
+          ...state,
+          errorMsg: action.errorMsg
+        };
     default:
       return state;
   }

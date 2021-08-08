@@ -1,4 +1,11 @@
 
 .App {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.App > div {
+  width: 50%;
+  position: relative;
 }

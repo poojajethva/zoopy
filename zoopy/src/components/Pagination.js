@@ -11,7 +11,7 @@ const Pagination = () => {
       type: "SET_TOTAL_PAGES",
       totalPages: _totalPages,
     });
-  }, []);
+  }, [postalData]);
 
   const prevPage = (e) => {
     let _prevVal = currentPage !== 1 ? currentPage - 1 : currentPage;

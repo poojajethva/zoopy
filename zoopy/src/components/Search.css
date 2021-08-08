@@ -31,3 +31,25 @@
     cursor: pointer;
     font-size: 16px;
 }
+
+.errorMsg{
+  position: fixed;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 5px;
+  padding: 20px 50px;
+  margin: 10px;
+  color: #fff;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 18px;
+  animation: toasterAni 3s normal forwards; 
+}
+
+@keyframes toasterAni {
+  0%   { top: -150px; }
+  10% { top: 30px; }
+  90% { top: 30px; }
+  100%   { top: -150px; }
+}

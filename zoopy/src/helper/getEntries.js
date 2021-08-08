@@ -12,4 +12,8 @@ export const getSearchedQuery = (arr, query) => {
     return arr.filter((a, i) => a.postal_code === query);
 }
 
+export const removeUnavailableData = (arr) => {
+    return arr.filter((a) => !!a.postal_code);
+}
+
 export default getEntries;
