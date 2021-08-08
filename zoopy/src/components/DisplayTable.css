@@ -3,6 +3,7 @@
     overflow-y: auto;
     height: calc(100vh - 232px);
     display: block;
+    min-width: 480px;
 }
 .tableData::-webkit-scrollbar {
     width: 5px;
@@ -15,21 +16,25 @@
   .tableData::-webkit-scrollbar-thumb {
     background-color:#ccc;
   }
-thead{
+.table-heading{
     background: #20B2AA;
 }
-
-th{
+.table-row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.data-heading{
     padding: 12px 8px;
     font-size: 16px;
     font-weight: bold;
     color: white;
-    width: 21%;
+    width: 20%;
     text-align: center;
 }
-td{
+.data{
     padding: 12px 8px;
     border-bottom: 1px solid #eee;
-    width: 21%;
+    width: 20%;
     text-align: center;
 }

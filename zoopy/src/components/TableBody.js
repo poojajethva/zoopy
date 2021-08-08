@@ -2,13 +2,13 @@ import React from "react";
 
 const TableBody = ({obj}) => {
   return (
-      <tr>
-        <td>{obj.postal_code || "Not Available"}</td>
-        <td>{obj.longitude}</td>
-        <td>{obj.latitude}</td>
-        <td>{obj.city}</td>
-        <td>{obj.country}</td>
-      </tr>
+      <div className="table-row">
+        <div className="data">{obj.postal_code || "Not Available"}</div>
+        <div className="data">{obj.longitude}</div>
+        <div className="data">{obj.latitude}</div>
+        <div className="data">{obj.city}</div>
+        <div className="data">{obj.country}</div>
+      </div>
   );
 };
 

@@ -2,15 +2,13 @@ import React from "react";
 
 const TableHeading = () => {
   return (
-    <thead>
-      <tr>
-        <th>Postal Code</th>
-        <th>Latitude</th>
-        <th>Longitude</th>
-        <th>City</th>
-        <th>Country</th>
-      </tr>
-    </thead>
+      <div className="table-heading table-row">
+        <div className="data-heading">Postal Code</div>
+        <div className="data-heading">Latitude</div>
+        <div className="data-heading">Longitude</div>
+        <div className="data-heading">City</div>
+        <div className="data-heading">Country</div>
+      </div>
   );
 };
 

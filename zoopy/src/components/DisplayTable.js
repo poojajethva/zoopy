@@ -21,16 +21,14 @@ const DisplayTable = () => {
   }, [currentPage, postalData, backToResults]);
 
   return (
-    <table className="tableData">
+    <div className="tableData">
       <TableHeading />
-      <tbody>
         {dataChunk
           ? dataChunk.map((d, i) => {
               return <TableBody key={i} obj={d} />;
             })
           : "Loading..."}
-      </tbody>
-    </table>
+    </div>
   );
 };
 
