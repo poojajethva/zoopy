@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import { useDataLayerValue } from "../datastore/DataLayer";
 import "mapbox-gl/dist/mapbox-gl.css";

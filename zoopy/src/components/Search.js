@@ -44,7 +44,9 @@ const Search = () => {
         popupObj: arr[0],
       });
       dispatch({ type: "SET_SHOW_POPUP", showPopup: true });
+      dispatch({ type: "SET_BACK_TO_RESULTS", backToResults: true });
     } else {
+      dispatch({ type: "SET_BACK_TO_RESULTS", backToResults: false });
       dispatch({
         type: "SET_ERROR_MSG",
         errorMsg: true,

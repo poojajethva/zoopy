@@ -3,7 +3,7 @@ import postalData from "../data/postalData";
 export const initialState = {
   postalData: postalData,
   dataChunk: [],
-  nextStart: 2,
+  nextStart: 10,
   totalPages: 1,
   currentPage: 1,
   searchTerm: "",
@@ -12,6 +12,7 @@ export const initialState = {
   viewport: {},
   showPopup: false,
   popupObj: {},
+  backToResults: false,
 };
 
 export const reducer = (state, action) => {
@@ -70,6 +71,11 @@ export const reducer = (state, action) => {
       return {
         ...state,
         viewport: action.viewport,
+      };
+      case "SET_BACK_TO_RESULTS":
+      return {
+        ...state,
+        backToResults: action.backToResults,
       };
 
     default:

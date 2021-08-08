@@ -1,6 +1,6 @@
 const getEntries = (arr, start) => {
   let end = start + 10;
-  const data = arr.filter((a, i) => i >= start && i <= end);
+  const data = arr.filter((a, i) => i >= start && i < end);
   return { data: data, nextStart: end };
 };
 
