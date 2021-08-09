@@ -1,23 +1,25 @@
 {
   "files": {
     "main.css": "/zoopy/static/css/main.82d0da3a.chunk.css",
-    "main.js": "/zoopy/static/js/main.e8a3dd4a.chunk.js",
-    "main.js.map": "/zoopy/static/js/main.e8a3dd4a.chunk.js.map",
+    "main.js": "/zoopy/static/js/main.a1891caa.chunk.js",
+    "main.js.map": "/zoopy/static/js/main.a1891caa.chunk.js.map",
     "runtime-main.js": "/zoopy/static/js/runtime-main.bdca604f.js",
     "runtime-main.js.map": "/zoopy/static/js/runtime-main.bdca604f.js.map",
     "static/css/2.9345dda6.chunk.css": "/zoopy/static/css/2.9345dda6.chunk.css",
-    "static/js/2.9abb2369.chunk.js": "/zoopy/static/js/2.9abb2369.chunk.js",
-    "static/js/2.9abb2369.chunk.js.map": "/zoopy/static/js/2.9abb2369.chunk.js.map",
+    "static/js/2.318f7759.chunk.js": "/zoopy/static/js/2.318f7759.chunk.js",
+    "static/js/2.318f7759.chunk.js.map": "/zoopy/static/js/2.318f7759.chunk.js.map",
     "index.html": "/zoopy/index.html",
     "static/css/2.9345dda6.chunk.css.map": "/zoopy/static/css/2.9345dda6.chunk.css.map",
     "static/css/main.82d0da3a.chunk.css.map": "/zoopy/static/css/main.82d0da3a.chunk.css.map",
-    "static/js/2.9abb2369.chunk.js.LICENSE.txt": "/zoopy/static/js/2.9abb2369.chunk.js.LICENSE.txt"
+    "static/js/2.318f7759.chunk.js.LICENSE.txt": "/zoopy/static/js/2.318f7759.chunk.js.LICENSE.txt",
+    "static/js/mapbox-gl-csp-worker.fd6cb9b9.worker.js": "/zoopy/static/js/mapbox-gl-csp-worker.fd6cb9b9.worker.js",
+    "static/js/mapbox-gl-csp-worker.fd6cb9b9.worker.js.map": "/zoopy/static/js/mapbox-gl-csp-worker.fd6cb9b9.worker.js.map"
   },
   "entrypoints": [
     "static/js/runtime-main.bdca604f.js",
     "static/css/2.9345dda6.chunk.css",
-    "static/js/2.9abb2369.chunk.js",
+    "static/js/2.318f7759.chunk.js",
     "static/css/main.82d0da3a.chunk.css",
-    "static/js/main.e8a3dd4a.chunk.js"
+    "static/js/main.a1891caa.chunk.js"
   ]
 }
