@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
 import { useDataLayerValue } from "../datastore/DataLayer";
 import "mapbox-gl/dist/mapbox-gl.css";
 import "./Map.css";
 import markerImg from "../images/mapbox-icon.png";
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 const token =
   "pk.eyJ1IjoicG9vamFqMjEiLCJhIjoiY2tzMHQ5NWQzMTVydDJ2bXIzaDNpNXV0cSJ9.HgfJhnBEBDeCk99z0jZy-w";
