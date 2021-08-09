@@ -3,7 +3,6 @@
     overflow-y: auto;
     height: calc(100vh - 232px);
     display: block;
-    min-width: 480px;
 }
 .tableData::-webkit-scrollbar {
     width: 5px;

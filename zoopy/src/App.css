@@ -41,12 +41,19 @@ header {
   .container .leftCol {
     padding-right: 20px;
   }
-
+  
   .tableData {
     height: auto;
   }
-
+  
   .container .rightCol {
     height: 500px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .table-row{
+    min-width: 480px;
+    overflow-x: auto;
   }
 }
